@@ -1,0 +1,15 @@
+
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F7F8F8;
+    font-family: "Exo",sans-serif;
+}
+
+.space{
+    margin: 20px;
+    padding: 20px;
+}
+
+

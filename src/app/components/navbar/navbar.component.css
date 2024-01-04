@@ -1,0 +1,60 @@
+.navbar {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .navbar-brand img {
+    max-width: 130px;
+}
+
+.navbar .nav-item a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px 22px;
+}
+
+.nav-item .active,
+.navbar .nav-item a:hover {
+    color: var(--mainColor) !important;
+}
+
+.navbar .search {
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+
+.search:active, .search:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+@media only screen and (max-width:991px) {
+    .navbar .navbar-toggler {
+        border: 2px solid #fff;
+        padding: 7px 12px;
+    }
+
+    .navbar-toggler:active, .navbar-toggler:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-toggler svg {
+        color: #fff;
+    }
+
+    .nav-item {
+        margin: 20px 0px;
+    }
+
+    .search {
+        margin: 15px 0px;
+    }
+
+}

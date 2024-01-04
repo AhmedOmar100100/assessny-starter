@@ -1,0 +1,89 @@
+.header {
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: calc(100vh - 84px);
+    background: rgb(220, 236, 243);
+    background: linear-gradient(90deg, rgba(220, 236, 243, 1) 0%, rgba(247, 250, 251, 1) 100%);
+    z-index: -1;
+    transform: translate(0px, -60px) skew(0deg, 5deg);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+}
+
+.header-icons {
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+    z-index: -1;
+}
+
+.about-assessny {
+    /* border: 2px solid #000; */
+    height: 335px;
+    overflow: hidden;
+    /* border: 1px dotted rgb(100, 100, 100); */
+    margin-top: 15px;
+    padding: 11px;
+    text-align: center;
+}
+
+.about-assessny h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.about-assessny p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.header-logo img {
+    max-width: 231px;
+
+}
+
+
+.header-illustration img {
+    height: 450px;
+}
+
+.socialmedia {
+    padding-top: 110px;
+    padding-bottom: 50px;
+    /* margin-left: 30px; */
+}
+
+.socialmedia svg {
+    color: var(--darkBlue);
+}
+
+@media (max-width:1200px) {
+    .about-assessny {
+        height: 400px;
+    }
+
+}
+
+@media(max-width:767px) {
+    .socialmedia svg {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+}
+
+@media(max-width:421px) {
+    .socialmedia svg {
+        margin-left: .75rem !important;
+        margin-right: .75rem !important;
+        font-size: 24px;
+    }
+}

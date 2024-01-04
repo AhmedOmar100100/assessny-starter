@@ -1,0 +1,23 @@
+<div class="teachermsgs-slider text-center">
+    <div class="container">
+
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+            (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+            (beforeChange)="beforeChange($event)">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <div class="board-card">
+                    <img class="img-fluid" src="{{ slide.img }}">
+                    <div class="text-center">
+                        <p class="text-blue fw-bold fs-6 w-75 m-auto">
+                            {{slide.feed}}
+                        </p>
+                        <p class="mt-4 name">
+                            {{slide.name}}
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </ngx-slick-carousel>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+<div class="row d-flex my-5 position-relative mx-2">
+    <div class="row">
+        <div class="col-md-8"><button data-bs-toggle="modal" data-bs-target="#addExamModal" class="btn btn-warning btn-lg active rounded-5 " style="background-color: #E3A84B;"  role="button" aria-pressed="true">اضافة امتحان جديد <i class="bi bi-file-earmark-plus"></i></button></div>
+        <div class="col-md-4 d-flex justify-content-end align-items-center"><h2>ألامتحانات التي أنشأتها</h2></div>
+    </div>
+    <div class="row">
+  
+  <!-- Modal -->
+  <div class="modal fade" id="addExamModal" tabindex="-1" aria-labelledby="addExamModalLabel" aria-hidden="true">
+    <div class="modal-dialog my-0 add-exam-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="direction: rtl;background-color: #E3A84B;">
+        
+          <h1 class="modal-title fs-5" id="addExamModalLabel">
+           إضافة إمتحان
+          </h1>
+          <button type="button" class="btn-close mx-0" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="row mt-5 mb-3">
+        <div class="col-md-8">
+            <form class="d-flex">
+                <div class="search">
+                    <label class="d-flex">
+                        <input type="text" placeholder="search ">
+                        <button type="submit" class="btnsearch"><i class="fa fa-search"></i></button>
+                    </label>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-4 d-flex justify-content-center align-items-center ">
+           <select class="dropdown px-4 text-center" value="اختر المجموعة">
+                <option>مجموعة 1</option>
+                <option>مجموعة 2</option>
+                <option>مجموعة 3</option>
+                <option>مجموعة 4</option>
+           </select>
+        </div>
+
+    </div>
+   <div class="row">
+    <div class="container-fluid">
+        <div class="filter">
+            <button class="btn btn-light">
+                <i class="fa-solid fa-filter"></i>
+            </button>
+        </div>
+        <div class="container w-100 exam p-2 d-flex" >
+            <div class="icon col-md-1">
+                <i class="bi bi-journal-check fa-2x style"></i>
+            </div>
+            <div  class="col-md-7 d-block my-0 py-0">
+                <p style="margin-bottom: -3px;">امتحان فى </p>
+                <p style="margin-bottom: -3px;" class="pe-4">الطاقة الحرارية وتطبيقاتها واهم استخداماتها في هيئات الدولة</p>
+                <span >
+                    <button class="btn btn-outline-light rounded-5 px-2  btnsexam">الصرف </button>
+                    <button class="btn btn-outline-light rounded-5 px-2 btnsexam">الوحدة الثالثة</button>
+                </span>
+            </div>
+            <div  class="col-md-4 d-flex ms-3 justify-content-end align-items-center">
+                <i class="bi bi-pencil-square  mx-3"></i>
+                <i class="bi bi-trash3-fill mx-3"></i>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                </div>
+            </div>
+
+        </div>
+    </div>
+   </div>
+</div>
+

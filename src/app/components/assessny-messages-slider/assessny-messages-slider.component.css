@@ -1,0 +1,12 @@
+.board-card {
+    background-color: transparent;
+    border: 0;
+    border-radius: 20px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.board-card img {
+    padding: 20px 30px;
+    border-radius: 10px;
+}

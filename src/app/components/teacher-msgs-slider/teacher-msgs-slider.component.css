@@ -1,0 +1,15 @@
+.teachermsgs-slider img {
+    width: 100px;
+    height: 99px;
+    border-radius: 50%;
+    margin: 50px auto 7px auto;
+    object-fit: cover;
+}
+
+.teachermsgs-slider .name {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+}

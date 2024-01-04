@@ -1,0 +1,22 @@
+<div class="board-slider">
+    <div class="container">
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+            (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+            (beforeChange)="beforeChange($event)">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <div class="card board-card">
+                    <img class="card-img-top" src="{{ slide.img }}">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{slide.title}}</h5>
+                        <p class="card-text">
+                            {{slide.position}}
+                        </p>
+                        <a [href]="slide.linkedinProfile" target="_blank" class="btn btn-primary">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </ngx-slick-carousel>
+    </div>
+</div>

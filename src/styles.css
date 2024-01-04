@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: lato;
+    src: url(assets/fonts/HelveticaNeueLT.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+body {
+    /* height: 3000px; */
+    font-family: 'HelveticaNeueLT';
+}
+
+:root {
+    --mainColor: #F6A915;
+    --darkBlue: #2D5284;
+    --bgLight: #EDF5F7;
+    --textDark: #465F85;
+    --borderColor: #CADDE3;
+    --blue: #002245;
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.darkBlueGradient {
+    background: rgb(52, 71, 99);
+    background: linear-gradient(90deg, rgba(52, 71, 99, 1) 0%, rgba(8, 31, 65, 1) 100%);
+}
+
+.text-dark-color {
+    color: var(--textDark);
+}
+
+.main-heading-sections {
+    text-align: center;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    /* background-color: #F6A915; */
+    font-size: 35px !important;
+    font-weight: bold;
+    margin-top: 50px;
+    color: var(--darkBlue);
+}
+
+.main-heading-sections::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: var(--borderColor);
+    width: 25%;
+    height: 4px;
+}
+
+.main-heading-sections span {
+    color: var(--mainColor);
+}
+
+/* board slider */
+.slick-slider {
+    background: none !important;
+}
+
+.slick-prev::before, .slick-next::before {
+    color: var(--mainColor) !important;
+    opacity: 1;
+    font-size: 30px;
+}
+
+.board-slider .slick-prev, .studentmsgs-slider .slick-prev, .teachermsgs-slider .slick-prev {
+    left: -10px;
+    z-index: 1000;
+}
+
+.board-slider .slick-next, .studentmsgs-slider .slick-next, .teachermsgs-slider .slick-next {
+    right: 0px;
+    z-index: 1000;
+}
+
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+
+.gallery .slick-prev, .gallery .slick-next {
+    left: 50%;
+    transform: translate(-50%, 0) rotate(90deg);
+    height: 192px;
+    background-color: #B3CDD8;
+    border-radius: 6px;
+}
+
+.gallery .slick-next {
+    top: unset;
+    bottom: -115px;
+}
+
+.gallery .slick-prev {
+    top: -115px;
+}
+
+.gallery .slick-prev::before, .gallery .slick-next::before {
+    color: #fff !important;
+    font-size: 16px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: orange !important;
+    font-size: 13px;
+}
+
+.slick-dots li button:before {
+    color: white !important;
+    font-size: 13px;
+    opacity: 1;
+}
+
+
+
+/* .teachermsgs-slider */
+.teachermsgs-slider .slick-dots li.slick-active button:before {
+    color: var(--blue) !important;
+    font-size: 13px;
+}
+
+.teachermsgs-slider .slick-prev::before, .teachermsgs-slider .slick-next::before {
+    color: var(--blue) !important;
+    opacity: 1;
+    font-size: 30px;
+}

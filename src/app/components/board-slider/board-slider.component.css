@@ -1,0 +1,28 @@
+/* #DBEAF3 */
+/* .slick-slider {
+    width: 88%;
+    margin: auto;
+    background: rgb(14, 13, 13);
+} */
+
+/* .slick-prev,
+.slick-next {
+    height: 45px;
+    width: 40px;
+    color: var(--mainColor) !important;
+    background: grey !important;
+    z-index: 100;
+} */
+
+.board-card {
+    background-color: #DBEAF3;
+    border: 0;
+    border-radius: 40px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.board-card img {
+    padding: 20px 40px;
+    border-radius: 70px;
+}

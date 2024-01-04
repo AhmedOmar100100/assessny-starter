@@ -1,0 +1,20 @@
+<!-- <p>assessny-messages-slider works!</p> -->
+<div class="board-slider">
+    <div class="container">
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+            (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+            (beforeChange)="beforeChange($event)">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <div class="card board-card">
+                    <div class="card-body text-end">
+                        <h5 class="card-title">{{slide.title}}</h5>
+                        <p class="card-text">
+                            {{slide.desc}}
+                        </p>
+                    </div>
+                    <img class="card-img-top" src="{{ slide.img }}">
+                </div>
+            </div>
+        </ngx-slick-carousel>
+    </div>
+</div>
